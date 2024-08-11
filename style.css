@@ -1,0 +1,315 @@
+* {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    background:linear-gradient(to right ,rgb(66, 208, 255),rgba(255, 255, 255, 0.912),lightgreen);
+    text-shadow: #000;
+}
+#heading{
+    text-align: center;
+    font-family: 'Gill Sans MT';
+    color: rgb(253, 0, 55);
+}
+
+#container {
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+}
+
+.item {
+    height: 250px;
+    width: 250px;
+    background-color: whitesmoke;
+    border: 3px dotted #000;
+    border-radius: 50%;
+}
+
+#score {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+
+#rock {
+    background-image: url("rock.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#paper {
+    background-image: url("paper.jpg");
+    background-size: contain;
+
+}
+
+#sciser {
+    background-image: url(sciser.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#btn {
+    color: white;
+    font-weight: bolder;
+    background-color: rgb(240, 72, 0);
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#num1,
+#num2 {
+    width: 70px;
+    height: 50px;
+    margin: 0;
+    font-size: 40px;
+    border: 2px dotted black;
+    border-radius: 10%;
+    background-color: whitesmoke;
+
+}
+
+#num1 {
+    position: relative;
+    left: 45px;
+}
+
+#num2 {
+    position: relative;
+    left: 20px;
+}
+
+#text1,
+#text2 {
+    font-weight: 900;
+    color: rgb(217, 0, 255);
+    font-family: cursive;
+    position: relative;
+    left: 0px;
+}
+
+
+#name {
+    margin: 0;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+    position: relative;
+    top: -50px;
+}
+
+#cText,
+#uText {
+    font-size: 40px;
+    position: relative;
+    left: 0px;
+    bottom: 80px;
+    color: blue;
+}
+
+#result {
+    height: 80px;
+    width: 100%;
+    color: rgb(64, 255, 0);
+    font-size: 40px;
+    position: relative;
+    top: 20PX;
+}
+
+#nam {
+    font-size: 50px;
+    position: relative;
+    bottom: 50px;
+}
+
+#CMP {
+    position: relative;
+    right: 80px;
+    top: 40px;
+    border: 2px solid gold;
+    border-radius: 10px;
+    background-color: rgb(179, 245, 221);
+    height: 150px;
+    width: 300px;
+    animation: anima 2s ease 0s infinite;
+    box-sizing: border-box;
+
+}
+
+#USR {
+    height: 150px;
+    width: 300px;
+    position: relative;
+    left: 80px;
+    top: 40px;
+    border: 2px double gold;
+    border-radius: 10px;
+    background-color: rgb(179, 245, 221);
+
+    animation: anima 2s ease infinite;
+}
+
+
+#btn {
+    height: 30px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+}
+
+.item:hover {
+    border: 4px dotted black;
+}
+
+
+
+@keyframes anima {
+    0% {
+        border-color: rgb(28, 180, 38);
+    }
+
+    25% {
+        border-color: red;
+    }
+
+    50% {
+        border-color: rgb(0, 68, 255);
+    }
+
+    75% {
+        border-color: rgb(204, 255, 0);
+    }
+
+    100% {
+        border-color: rgb(0, 234, 255);
+    }
+}
+
+#vs {
+    font-size: 40px;
+    color: rgb(255, 0, 81);
+    font-family: cursive;
+    animation: anima2 2s ease infinite;
+}
+
+@keyframes anima2 {
+    0% {
+        color: rgb(28, 180, 38);
+    }
+
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: rgb(0, 68, 255);
+    }
+
+    75% {
+        color: rgb(204, 255, 0);
+    }
+
+    100% {
+        color: rgb(0, 234, 255);
+    }
+}
+
+@media(max-width:500px){
+    body{
+        padding-left: 10%;
+        height: 600px;
+       width: 300px;
+   
+       background-color: #3498db; /* fallback color */
+   
+        
+    }
+    #container {
+        height: 220px;
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0;
+    }
+    .item {
+        height: 100px;
+        width: 140px;
+        background-color: whitesmoke;
+        border: 3px dotted #000;
+        border-radius: 50%;
+    }
+    #name {
+        margin: 0;
+        height: 20px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+        position: relative;
+        font-size: 10px;
+        
+    }
+    #score {
+        height: 150px;
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        position: relative;
+        right: 70px;
+
+    }
+
+    #CMP {
+        
+        visibility: hidden;
+    
+    }
+    
+    #USR {
+        visibility: hidden;
+
+    }
+
+    #btn {
+        height: 30px;
+        width: 200px;
+        position: relative;
+        top: 41px;
+    }
+    
+    #score1{
+        position: relative;
+        left: 0px;
+    }
+
+    #text1,#text2{
+      position: relative;
+      left: 28.4px;
+        
+    }
+    
+    #vs{
+      position: relative;
+      left: 20px;
+    }
+}
